@@ -1,0 +1,112 @@
+{
+  "components": [
+    {
+      "components": [
+        {
+          "class": "justify-content-start align-items-center",
+          "components": [
+            {
+              "class": "col-md-6 d-flex align-items-center",
+              "components": [
+                {
+                  "events": {
+                    "click": [
+                      {
+                        "code": "await InvokeAsync(() => { sidebar0.Toggle(); });",
+                        "type": "execute"
+                      },
+                      {
+                        "code": "await InvokeAsync(() => { body0.Toggle(); });",
+                        "type": "execute"
+                      }
+                    ]
+                  },
+                  "name": "sidebar-toggle0",
+                  "style": {
+                    "borderRadius": "18px"
+                  },
+                  "type": "sidebar-toggle"
+                },
+                {
+                  "name": "label0",
+                  "text": "AmadeusBlazor",
+                  "type": "label"
+                }
+              ],
+              "name": "leftCol",
+              "type": "col"
+            }
+          ],
+          "name": "headerRow",
+          "style": {
+            "backgroundColor": "#a71010"
+          },
+          "type": "row"
+        }
+      ],
+      "name": "header0",
+      "type": "header"
+    },
+    {
+      "components": [
+        {
+          "name": "heading0",
+          "size": "H3",
+          "style": {
+            "color": "#e6c54f"
+          },
+          "text": "Descendants of Mozart",
+          "type": "heading"
+        },
+        {
+          "name": "image0",
+          "path": "/assets/images/nachkommen_1-1.png",
+          "type": "image"
+        },
+        {
+          "name": "heading1",
+          "size": "H3",
+          "style": {
+            "height": "20px"
+          },
+          "type": "heading"
+        },
+        {
+          "content": "    •Reimund Leopold Mozart (* 27. Juni 1783 in Wien; † 19. August 1783 ebenda)<br>\n    <br>\n    •Karl Thomas Mozart (* 21. September 1784 in Wien; † 31. Oktober 1858 in Mailand)<br>\n    <br>\n    •Johann Thomas Leopold Mozart (* 18. Oktober 1786 in Wien; † 15. November 1786 ebenda)<br>\n    <br>\n    •Theresia Maria Anna Mozart (* 27. Dezember 1787 in Wien; † 29. Juni 1788 ebenda)<br>\n    <br>\n    •Anna Maria Mozart (* 16. November 1789 in Wien; † 16. November 1789 ebenda)<br>\n    <br>\n    •Franz Xaver Wolfgang Mozart (* 26. Juli 1791 in Wien; † 19. Juli 1844 in Karlsbad)<br>\n    <br>\n<br>\n",
+          "name": "html0",
+          "type": "html"
+        }
+      ],
+      "name": "body0",
+      "type": "body"
+    },
+    {
+      "components": [
+        {
+          "name": "panelmenu0",
+          "style": {
+            "height": "100%"
+          },
+          "type": "panelmenu"
+        }
+      ],
+      "name": "sidebar0",
+      "type": "sidebar"
+    },
+    {
+      "components": [
+        {
+          "name": "footerText",
+          "text": "AmadeusBlazor, Copyright Ⓒ 2020",
+          "type": "label"
+        }
+      ],
+      "name": "footer0",
+      "style": {
+        "backgroundColor": "#a71010"
+      },
+      "type": "footer"
+    }
+  ],
+  "name": "Descendants"
+}

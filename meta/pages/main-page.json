@@ -1,0 +1,19 @@
+{
+  "name": "MainPage",
+  "access": [],
+  "layout": "Main2",
+  "components": [
+    {
+      "type": "content",
+      "container": "main",
+      "components": [
+        {
+          "type": "heading",
+          "size": "H1",
+          "name": "pageTitle",
+          "text": "MainPage"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,539 @@
+﻿@inherits AmadeusBlazor.Layouts.MusicWorkLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center" style="background-color: #a71010">
+      <div class="col-md-6 d-flex align-items-center">
+        <RadzenSidebarToggle style="border-radius: 18px" Click="@SidebarToggle0Click">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="AmadeusBlazor">
+        </RadzenLabel>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenHeading Size="H2" style="font-family: georgia,serif; font-style: italic" Text="Musical works of Mozart">
+    </RadzenHeading>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="The listing of Mozart's compositions">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/werke_1-1.png">
+    </RadzenImage>
+    <RadzenHeading Size="H3" style="height: 6px">
+    </RadzenHeading>
+    <RadzenHtml>
+      •The indication "K." or KV refers to "Köchel (Verzeichnis)", i.e. the (more or less) chronological (i.e. by composition date) catalog of Mozart's works by Ludwig von Köchel. Note that this catalog has been amended several times, leading to ambiguity over some KV numbers (see e.g. Symphony No. 25). A version of the Köchel catalog can be found here and here.
+    </RadzenHtml>
+    <RadzenHtml>
+      •The compositions of Mozart listed below are grouped thematically, i.e. by type of composition. Not all thematic groups of Mozart's works have a separate numbering that is generally accepted: Köchel only numbers Symphonies (1 to 41); Piano concertos (1 to 27, leaving out some early transcriptions by Mozart) and a few other groups, on the other hand, for string quartets, most chamber music and vocal music there is no such numbering (or at least no general accepted one).
+    </RadzenHtml>
+    <RadzenHtml>
+      •Only relatively few of Mozart's compositions have Opus numbers, as not so many of his compositions were published during his lifetime, so numbering by Opus number proves quite impractical for Mozart compositions.
+    </RadzenHtml>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Symphonies">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/werke_5-1.png">
+    </RadzenImage>
+    <RadzenHeading Size="H3" style="height: 3px">
+    </RadzenHeading>
+    <RadzenHtml>
+      Mozart's symphonic production covers a 24 year interval, from 1764 to 1788. According to most recent investigations, Mozart wrote not just the 41 symphonies reported in traditional editions, but up to 68 complete works of this type. However, by convention, the original numbering has been retained, and so his last symphony is still known as "No. 41". Some of the symphonies (K .297, 385, 550) were revised by the author after their first versions.<br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #ff0505" Text="Childhood Symphonies (1764-1771)">
+    </RadzenHeading>
+    <RadzenHeading Size="H3" style="height: 17px">
+    </RadzenHeading>
+    <RadzenHtml>
+      These are the numbered symphonies from Mozart's early childhood. It should be noted that there are also a fair amount of unnumbered symphonies from this time period.
+    </RadzenHtml>
+    <RadzenHtml>
+      <br>
+          •Symphony No. 1 in E-flat major, K. 16<br>
+          •Symphony No. 2 in B-flat major, K. 17 (spurious)<br>
+          •Symphony No. 3 in E-flat major, K. 18 (spurious, by Abel)<br>
+          •Symphony No. 4 in D major, K. 19<br>
+          •Symphony No. 5 in B-flat major, K. 22<br>
+          •Symphony No. 6 in F major, K. 43<br>
+          •Symphony No. 7 in D major, K. 45<br>
+          •Symphony No. 8 in D major, K. 48<br>
+          •Symphony No. 9 in C major, K. 73<br>
+          •Symphony No. 10 in G major, K. 74<br>
+          •Symphony No. 11 in D major, K. 84<br>
+          •Symphony No. 12 in G major, K. 110<br>
+          •Symphony No. 13 in F major, K. 112<br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #ff0505" Text="Salzburg Era Symphonies (1771-1781)">
+    </RadzenHeading>
+    <RadzenHtml>
+      These symphonies are sometimes subcategorized as "Early" (1771-1773) and "Late" (1773-1775), and sometimes subcategorized as "Germanic" (with minuet) or "Italian" (without minuet). None of these were printed during Mozart's lifetime.<br>Although not counted as 'symphonies' the three Divertimenti K. 136-138, in 3-movement Italian overture style, are sometimes indicated as 'Salzburg Symphonies' too.<br>
+    </RadzenHtml>
+    <RadzenHtml>
+      <br>
+          •Symphony No. 14 in A major, K. 114 (1771)<br>
+          •Symphony No. 15 in G major, K. 124 (1772)<br>
+          •Symphony No. 16 in C major, K. 128 (1772)<br>
+          •Symphony No. 17 in G major, K. 129 (1772)<br>
+          •Symphony No. 18 in F major, K. 130 (1772)<br>
+          •Symphony No. 19 in E-flat major, K. 132 (1772)<br>
+          •Symphony No. 20 in D major, K. 133 (1772)<br>
+          •Symphony No. 21 in A major, K. 134 (1772)<br>
+          •Symphony No. 22 in C major, K. 162 (1773)<br>
+          •Symphony No. 23 in D major, K. 181 (1773)<br>
+          •Symphony No. 24 in B-flat major, K. 182 (1773)<br>
+          •Symphony No. 25 in G minor, K. 183 (173d B) (1773)<br>
+          •Symphony No. 26 in E-flat major, K. 184 (1773)<br>
+          •Symphony No. 27 in G major, K. 199 (1773)<br>
+          •Symphony No. 28 in C major, K. 200 (1774)<br>
+          •Symphony No. 29 in A major, K. 201 (1774)<br>
+          •Symphony No. 30 in D major, K. 202 (1774)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #ff0000" Text="Late Symphonies of Mozart (1791-1791)">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Symphony No. 31 "Paris" in D major, K. 297 (K. 300a) (1778)<br>
+          •Symphony No. 32 "Overture in the Italian style" in G major, K. 318 (1779)<br>
+          •Symphony No. 33 in B-flat major, K. 319 (1779)<br>
+          •Symphony No. 34 in C major, K. 338 (1780)<br>
+          •Symphony No. 35 "Haffner" in D major, K. 385 (1782)<br>
+          •Symphony No. 36 "Linz" in C major, K. 425 (1783)<br>
+          •Symphony No. 37 in G major, K. 444 (1784)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHtml>
+      For years this was categorized as a Mozart symphony, but later scholarship determined that it was actually composed by Michael Haydn (No. 25), and Mozart wrote only the slow introduction for it
+    </RadzenHtml>
+    <RadzenHtml>
+      •Symphony No. 38 "Prague" in D major, K. 504 (1786)<br>
+    </RadzenHtml>
+    <RadzenHtml>
+      The three final symphonies (Nos. 39-41) were completed in about three months in 1788. It is quite likely that he hoped to publish these three works together as a single opus, although actually they remained unpublished until after his death. One or two of them might have been played in public in Leipzig in 1789.
+    </RadzenHtml>
+    <RadzenHtml>
+      <br>
+          •Symphony No. 39 in E flat major, K. 543 (1788)<br>
+          •Symphony No. 40 in G minor, K. 550 (1788)<br>
+          •Symphony No. 41 "Jupiter" in C major, K. 551 (1788)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Concertos of Mozart">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/werke_8-1.png">
+    </RadzenImage>
+    <RadzenHeading Size="H4" style="color: #ff0000" Text="Piano Concertos">
+    </RadzenHeading>
+    <RadzenHeading Size="H5" Text="Mozart's production for piano and orchestra are numbered from 1 to 27. The first four numbered concertos are early works. The movements of these concertos are arrangements of keyboard sonatas by various contemporary composers (Raupach, Honauer, C.P.E. Bach). Concertos 7 and 10 are compositions for three and two pianos respectively. The remaining twenty-one are original compositions for solo piano and orchestra. Among them, fifteen were written in the years from 1782 to 1786, while in the last five years Mozart wrote just two more piano concertos.">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Piano Concerto No. 1 in F major, K. 37<br>
+          •Piano Concerto No. 2 in B flat major, K. 39<br>
+          •Piano Concerto No. 3 in D major, K. 40<br>
+          •Piano Concerto No. 4 in G major, K. 41<br>
+          •Piano Concerto No. 5 in D major, K. 175<br>
+          •Piano Concerto No. 6 in B flat major, K. 238<br>
+          •Piano Concerto No. 7 in F major for Three Pianos, K. 242<br>
+          •Piano Concerto No. 8 "Lützow" in C major, K. 246<br>
+          •Piano Concerto No. 9 "Jeunehomme" in E flat major, K. 271<br>
+          •Piano Concerto No. 10 in E flat major for Two Pianos, K. 365<br>
+          •Piano Concerto No. 11 in F major, K. 413/387a<br>
+          •Piano Concerto No. 12 in A major, K. 414/385p<br>
+          •Piano Concerto No. 13 in C major, K. 415/387b<br>
+          •Piano Concerto No. 14 in E flat major, K. 449<br>
+          •Piano Concerto No. 15 in B flat major, K. 450<br>
+          •Piano Concerto No. 16 in D major, K. 451<br>
+          •Piano Concerto No. 17 in G major, K. 453<br>
+          •Piano Concerto No. 18 in B flat major, K. 456<br>
+          •Piano Concerto No. 19 in F major, K. 459<br>
+          •Piano Concerto No. 20 in D minor, K. 466<br>
+          •Piano Concerto No. 21 in C major, K. 467<br>
+          •Piano Concerto No. 22 in E flat major, K. 482<br>
+          •Piano Concerto No. 23 in A major, K. 488<br>
+          •Piano Concerto No. 24 in C minor, K. 491<br>
+          •Piano Concerto No. 25 in C major, K. 503<br>
+          •Piano Concerto No. 26 "Coronation" in D major, K. 537<br>
+          •Piano Concerto No. 27 in B flat major, K. 595<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fb0505" Text="Violin Concertos of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      Five violin concertos were written in his late teens while he was still touring with his father throughout Europe, an exceptional feat for a travelling composer. Mozart's Violin Concertos are notable for the beauty of their melodies and the skillful use of the expressive and technical characteristics of the instrument, though Mozart probably never went through all the violin possibilities like others (e.g. Beethoven and Brahms) did after him. (Alfred Einstein notes that the violin concerto–like sections in the serenades are more virtuosic than in the works titled Violin Concertos.)
+    </RadzenHtml>
+    <RadzenHtml>
+      <br>
+          Violin Concerto No. 1 in B flat major, K. 207 (1775)<br>
+          Violin Concerto No. 2 in D major, K. 211 (1775)<br>
+          Violin Concerto No. 3 in G major, K. 216 (1775)<br>
+          Violin Concerto No. 4 in D major, K. 218 (1775)<br>
+          Violin Concerto No. 5 in A major, K. 219 (1775)<br>
+          Violin Concerto in E flat major, K. 268 (1780) (Doubtful)<br>
+          Violin Concerto in D major, K. 271a Kolb (1777) (Doubtful)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fd0303" Text="Horn Concertos by Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      Arguably the most widely played concertos for horn, the four Horn Concertos are a major part of most professional horn players' repertoire. It is said that Mozart wrote them for his friend and lifelong companion, Joseph Ignaz Leitgeb. The concertos (especially the fourth) were written as virtuoso vehicles that allow the soloist to show a variety of abilities. (In Mozart's time the horn had no valves making it a very difficult piece.)<br>
+      
+      The Horn Concertos are characterized by an elegant and humorous dialogue between the soloist and the orchestra. Many of the autographs contain jokes aimed at the dedicatee.
+    </RadzenHtml>
+    <RadzenHtml>
+      <br>
+          •Horn Concerto No. 1 in D major, K. 412 (1791)<br>
+          •Horn Concerto No. 2 in E flat major, K. 417 (1783)<br>
+          •Horn Concerto No. 3 in E flat major, K. 447 (c. 1784-87)<br>
+          •Horn Concerto No. 4 in E flat major, K. 495 (1786)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #f90505" Text="Other Concertos by Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Bassoon Concerto in B flat major, K. 191 (1774)<br>
+          •Concerto for Harp, Flute and Orchestra, K. 299 (1778)<br>
+          •Oboe Concerto in C major, K. 314 (has come down to us as the second flute concerto, but was almost certainly an oboe concerto)<br>
+          •Concerto for Clarinet and Orchestra in A major, K. 622 (1791)<br>
+          •Flute Concerto No. 1 in G Major, K. 313 (1778)<br>
+          •Flute Concerto No. 2 in D Major, K. 314 (1778) (An arrangement of the above Oboe Concerto).<br>
+          •Andante for Flute and Orchestra in C Major, K. 315 (1778)<br>
+          •Concerto for Trumpet, K47a (lost)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Concertante Symphonies">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Sinfonia Concertante for Violin, Viola and Orchestra K. 364 in E flat major (1779)
+          •Sinfonia Concertante for Oboe, Clarinet, Horn and Bassoon K. 297b in E flat major Anh.9 and later Anh. C 14.01 (1778) (questionable)
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Piano Music of Mozart">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/werke_6-1.png">
+    </RadzenImage>
+    <RadzenHeading Size="H3" style="height: 10px">
+    </RadzenHeading>
+    <RadzenHtml>
+      Mozart's earliest composition attempts begin with piano sonatas and other piano pieces, as this is the instrument on which his musical education took place. Almost everything that he wrote for piano was intended to be played by himself (or by his sister, also a proficient piano player). Examples of his earliest works are those found in Nannerl's Music Book. Between 1782 and 1786 he wrote 20 works for piano solo (including sonatas, variations, fantasias, suites, fugues, rondo) and works for piano four hands and two pianos.
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fb0808" Text="Solo Piano Works of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Nannerl's Music Book<br>
+      <br>
+          1.Andante in C, K. 1a<br>
+          2.Allegro in C, K. 1b<br>
+          3.Allegro in F, K. 1c<br>
+          4.Minuet in F, K. 1d<br>
+          5.Minuet in G, K. 1e<br>
+          6.Minuet in C, K. 1f<br>
+          7.Minuet in F, K. 2<br>
+          8.Allegro in B-flat, K. 3<br>
+          9.Minuet in F, K. 4<br>
+          10.Minuet in F, K. 5<br>
+          11.Allegro in C, K. 5a<br>
+          12.Andante in B-flat, K. 5b<br>
+      <br>
+          •Piano Sonata No. 1 in C major, K. 279 (Munich, Summer 1774)<br>
+          •Piano Sonata No. 2 in F major, K. 280 (Munich, Summer 1774)<br>
+          •Piano Sonata No. 3 in B-flat major, K. 281 (Munich, Summer 1774)<br>
+          •Piano Sonata No. 4 in E-flat major, K. 282 (Munich, Summer 1774)<br>
+          •Piano Sonata No. 5 in G major, K. 283 (Munich, Summer 1774)<br>
+          •Piano Sonata No. 6 in D major, K. 284 (Munich, Feb-Mar 1775)<br>
+          •Piano Sonata No. 7 in C major, K. 309 (Mannheim, Nov. 8 1777)<br>
+          •Piano Sonata No. 8 in A minor, K. 310 (Paris, Summer 1778, some catalogues have the a minor and D Major reversed)<br>
+          •Piano Sonata No. 9 in D major, K. 311 (Mannheim, Nov 1777. some catalogues have the a minor and D Major reversed)<br>
+          •Piano Sonata No. 10 in C major, K. 330 (Summer 1778)<br>
+          •Piano Sonata No. 11 "Turkish" in A major, K. 331 (Summer 1778)<br>
+          •Piano Sonata No. 12 in F major, K. 332 (Summer 1778)<br>
+          •Piano Sonata No. 13 in B-flat major, K. 333 (Summer 1778)<br>
+          •Piano Sonata No. 14 in C minor, K. 457 (Vienna, Oct. 14, 1784,)<br>
+          •Piano Sonata No. 15 in F Major, K. 533/494 (Vienna, Jan. 3, 1788)<br>
+          •Piano Sonata No. 16 in C Major, K. 545 (so-called facile or semplice sonata; Vienna, Jun. 26, 1788)<br>
+          •Piano Sonata No. 17 in B-flat Major, K. 570 (Vienna, February, 1789)<br>
+          •Piano Sonata No. 18 in D Major K. 576 (Vienna, July 1789)<br>
+          •Fantasy No. 1 with Fugue in C major, K. 394 (Vienna, 1782)<br>
+          •Fantasy No. 2 in C minor, K. 396 (Vienna, 1782)<br>
+          •Fantasy No. 3 in D minor, K. 397 (Vienna, 1782)<br>
+          •Fantasy No. 4 in C minor, K. 475 (Vienna, May 20, 1785)<br>
+          •Rondo No. 1 in D major, K. 485<br>
+          •Rondo No. 2 in F major, K. 494 (finale to K.533 above initially published alone)<br>
+          •Rondo No. 3 in A minor, K. 511<br>
+          •Adagio for Piano in B minor, K. 540 (Vienna, 1788)<br>
+          •Allegro and Rondo for piano in F Major, K. 547a (Vienna, Summer 1788) (adapted from K. 547 and K. 545)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fb0303" Text="Dual Piano - Performer Works">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Sonata for Keyboard Four-hands in C major, K. 19d (London, May 1765)<br>
+          •Sonata for Keyboard Four-hands in D major, K. 381 / 123a<br>
+          •Sonata for Keyboard Four-hands in B flat major, K. 358 / 186c<br>
+          •Sonata for Keyboard Four-hands in F major, K. 497<br>
+          •Sonata for Keyboard Four-hands in C major, K. 521<br>
+          •Sonata for Keyboard Four-hands in G major, K. 357 (incompleted)<br>
+          •Sonata for Two Pianos in D Major, K. 448 / 375a<br>
+          •Fugue for Two Pianos in C minor, K. 426<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Chamber Music of Mozart">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/werke_5-1.png">
+    </RadzenImage>
+    <RadzenHeading Size="H4" style="color: #fd0606" Text="Violin Music of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      He also wrote for piano and violin (16 complete sonatas, plus several fragments and two variation sets), where - mainly in the more mature years - the piano does not play just a support to the other solo instrument, but builds a dialogue with it.
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fa0909" Text="Childhood Violin Sonatas of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Violin Sonata No. 1 in C major, K. 6<br>
+          •Violin Sonata No. 2 in D major, K. 7<br>
+          •Violin Sonata No. 3 in B flat major, K. 8<br>
+          •Violin Sonata No. 4 in G major, K. 9<br>
+          •Violin Sonata No. 5 in B flat major, K. 10<br>
+          •Violin Sonata No. 6 in G major, K. 11<br>
+          •Violin Sonata No. 7 in A major, K. 12<br>
+          •Violin Sonata No. 8 in F major, K. 13<br>
+          •Violin Sonata No. 9 in C major, K. 14<br>
+          •Violin Sonata No. 10 in B flat major, K. 15<br>
+          •Violin Sonata No. 11 in E flat major, K. 26<br>
+          •Violin Sonata No. 12 in G major, K. 27<br>
+          •Violin Sonata No. 13 in C major, K. 28<br>
+          •Violin Sonata No. 14 in D major, K. 29<br>
+          •Violin Sonata No. 15 in F major, K. 30<br>
+          •Violin Sonata No. 16 in B flat major, K. 31<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #ff0505" Text="Mature Violin Sonatas">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Violin Sonata No. 17 in C major, K. 296<br>
+          •Violin Sonata No. 18 in G major, K. 301<br>
+          •Violin Sonata No. 19 in E flat major, K. 302<br>
+          •Violin Sonata No. 20 in C major, K. 303<br>
+          •Violin Sonata No. 21 in E minor, K. 304<br>
+          •Violin Sonata No. 22 in A major, K. 305<br>
+          •Violin Sonata No. 23 in D major, K. 306<br>
+          •Violin Sonata No. 24 in F major, K. 376<br>
+          •Violin Sonata No. 25 in F major, K. 377<br>
+          •Violin Sonata No. 26 in B flat major, K. 378<br>
+          •Violin Sonata No. 27 in G major, K. 379<br>
+          •Violin Sonata No. 28 in E flat major, K. 380<br>
+          •Violin Sonata No. 29 in A major, K. 402 (completed by M. Stadler)<br>
+          •violin Sonata No. 32 in B flat major, K. 454<br>
+          •Violin Sonata No. 33 in E flat major, K. 481<br>
+          •Violin Sonata No. 35 in A major, K. 526<br>
+          •Violin Sonata No. 36 in F major, K. 547<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #f60606" Text="Variations for Violin and Piano of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Variations in G major, K. 359, "La bergere Celimene"<br>
+          •6 Variations in G minor on Helas, j'ai perdu mon amant, K. 360<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fd0303" Text="String Duos and Trios of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Duo for Violin & Viola in G major, K. 423<br>
+          •Duo for Violin & Viola in B flat major, K. 424<br>
+          •Trio for Violin, Viola & Cello in E flat major, K. 563 (1788)<br>
+          •Trio for 2 Violins & Cello in B flat major, K. 266<br>
+          •Preludes and Fugues for Violin, Viola & Cello, K. 404a<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #ff0303" Text="String Quartets of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Quartetti Milanesi, K. 80 and K. 155-160 (1770-1773)<br>
+      <br>
+          This cycle, in three movements, is interesting as far as these works can be considered precursors of the later - more complete - string quartets.<br>
+      <br>
+              •String Quartet No. 1 in G major, K. 80/73f (1770)<br>
+              •String Quartet No. 2 in D major, K. 155/134a (1772)<br>
+              •String Quartet No. 3 in G major, K. 156/134b (1772)<br>
+              •String Quartet No. 4 in C major, K. 157 (1772-3)<br>
+              •String Quartet No. 5 in F major, K. 158 (1772-3)<br>
+              •String Quartet No. 6 in B-flat major, K. 159 (1773)<br>
+              •String Quartet No. 7 in E-flat major, K. 160/159a (1773)<br>
+      <br>
+          •Vienna Quartets, K. 168-173 (1773) +<br>
+      <br>
+          Much more stylistically developed. In Vienna Mozart is believed to have heard the op. 17 and op. 20 quartets of Joseph Haydn, and had received from them a deep impression. Even if Mozart tries in these works to emulate the older musician, he still cannot reach Haydn's heights in the most difficult of all the musical genres.<br>
+      <br>
+              •String Quartet No. 8 in F major, K. 168 (1773)<br>
+              •String Quartet No. 9 in A major, K. 169 (1773)<br>
+              •String Quartet No. 10 in C major, K. 170 (1773)<br>
+              •String Quartet No. 11 in E-flat major, K. 171 (1773)<br>
+              •String Quartet No. 12 in B-flat major, K. 172 (1773)<br>
+              •String Quartet No. 13 in D minor, K. 173 (1773)<br>
+      <br>
+          •Haydn Quartets K. 387, 421, 428, 458, 464, 465, Opus 10 (1782–1785)<br>
+      <br>
+          Mozart returned to the quartet in the early 1780s after he had moved to Vienna, met Haydn in person, and developed a friendship with the older composer. Haydn had just published his set of six quartets Opus 33, which are thought to have been a stimulus to Mozart in returning to the genre. These quartets are often regarded as among the pinnacles of the genre.<br>
+      <br>
+              •String Quartet No. 14 in G major, ("Spring") K. 387 (1782)<br>
+              •String Quartet No. 15 in D minor, K. 421/417b (1783)<br>
+              •String Quartet No. 16 in E-flat major, K. 428/421b (1783)<br>
+              •String Quartet No. 17 in B-flat major ("Hunt"), K. 458 (1784)<br>
+              •String Quartet No. 18 in A major, K. 464 (1785)<br>
+              •String Quartet No. 19 in C major ("Dissonance"), K. 465 (1785)<br>
+      <br>
+          •String Quartet No. 20 in D major ("Hoffmeister"), K. 499 (1786)<br>
+      <br>
+          This work was published by (dedicated to?) Franz Anton Hoffmeister, as well as the Prussian Quartets. Mozart's last three quartets, dedicated to the King of Prussia Friedrich Wilhelm II, are noted for the cantabile character of the parts for cello (the instrument played by the king himself), the sweetness of sounds and the equilibrium among the different instruments.<br>
+      <br>
+          •Prussian Quartets K. 575, 589, 590 (1789-1790)<br>
+      <br>
+              •String Quartet No. 21 in D major, K. 575 (1789)<br>
+              •String Quartet No. 22 in B-flat major, K. 589 (1790)<br>
+              •String Quartet No. 23 in F major, K. 590 (1790)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #ff0404" Text="String Quintets of Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      The string quintets (K. 174, 406, 515, 516, 593, 614), for two violins, two violas and cello. Charles Rosen wrote that "by general consent, Mozart's greatest achievement in chamber music is the group of string quintets with two violas."<br>
+      <br>
+          •String Quintet in B flat major, K. 174<br>
+          •String Quintet in C major, K. 515<br>
+          •String Quintet in G minor, K. 516<br>
+          •String Quintet in C minor, K. 406 (516b)<br>
+      <br>
+          This is a transcription for string quintet of the earlier Serenade for wind octet in C minor (K. 388).<br>
+      <br>
+          •String Quintet in D major, K. 593<br>
+          •String Quintet in E flat major, K. 614<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fd0303" Text="Piano Trios by Mozart">
+    </RadzenHeading>
+    <RadzenHeading Size="H3">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Piano Trio in B flat, K. 254<br>
+          •Piano Trio in G, K. 496<br>
+          •Piano Trio in B flat, K. 502<br>
+          •Piano Trio in E, K. 542<br>
+          •Piano Trio in C, K. 548<br>
+          •Piano Trio in G, K. 564<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #fe0303" Text="Other chamber music by Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Flute Quartets (flute, violin, viola, cello) K. 285, 285a, 285b, 298 (1777–1778)<br>
+          •Oboe Quartet in F, K. 370<br>
+          •Horn Quintet In E Flat, K. 407<br>
+          •Quintet for piano and winds (oboe, clarinet, horn, bassoon) K. 452 (1784)<br>
+          •Piano Quartets K. 478 (1785) and K. 493 (1786)<br>
+          •Trio for Clarinet, Viola and Piano in E flat major, K. 498 "Kegelstatt" (1786)<br>
+          •Clarinet Quintet in A major, K. 581 (1789)<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Serenades, divertimenti and other instrumental works by Mozart">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/werke_7-1.png">
+    </RadzenImage>
+    <RadzenHeading Size="H3" style="height: 10px">
+    </RadzenHeading>
+    <RadzenHtml>
+      The production for instrumental ensembles includes several Divertimenti, Notturni, Serenades, Cassations, Marches, and Dances, besides, of course, the Symphonies. Mozart's production for orchestra is written for string ensembles (like the early Divertimenti K. 136–138), as well as for wind instruments ensembles and the varied combinations of string and wind.
+      
+      Mozart left a huge production of dances for orchestra, including the genres of Minuetto (more than 100), Contredanse and Allemande (or Teitsch, or Laendler).
+      
+      In his production of minuets, Mozart generally followed Haydn's example, preferring the slow character of the dance. Allemandes (56 between 1787 and 1791) were written mainly for public balls in Vienna. In the Contredanse production, also written mainly in Vienna, some examples of program music are found, like Il Temporale K. 535, La Bataille K. 600, Canarino K. 602, etc.
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #f90606; height: 37.66666793823242px" Text="Serenades by Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Serenade No. 1 in D major, K. 100<br>
+          •Serenade No. 3 ("Antretter") in D major, K. 185<br>
+          •Serenade No. 4 ("Colleredo") in D major, K. 203<br>
+          •Serenade No. 5 in D major, K. 204<br>
+          •Serenade No. 6 ("Serenata Notturna") in D major, K. 239<br>
+          •Serenade No. 7 ("Haffner") in D major, K. 250<br>
+          •Serenade No. 9 ("Posthorn") in D major, K. 320<br>
+          •Serenade No. 10 for winds (Serenade for Thirteen Wind Instruments or "Gran Partita") in B flat major, K. 361<br>
+          •Serenade No. 11 for winds in E flat major, K. 375<br>
+          •Serenade No. 12 for winds in C minor, K. 388<br>
+          •Serenade No. 13, "Eine kleine Nachtmusik" for String Quartet & Bass in G major, K. 525<br>
+      <br>
+    </RadzenHtml>
+    <RadzenHeading Size="H4" style="color: #ff0303" Text="Divertimenti by Mozart">
+    </RadzenHeading>
+    <RadzenHtml>
+      <br>
+          •Gallimathias Musicum (Quodlibet), K. 32 (1766)<br>
+          •Cassation in G, K. 63 (1769)<br>
+          •Cassation in B flat, K. 99 (1769)<br>
+          •Divertimento in E flat, K. 113 (1771)<br>
+          •Divertimento in D, K. 131 (1772)<br>
+          •Divertimenti, K. 136-138 (1772)<br>
+      <br>
+          Although sometimes described as string quartets, they are almost certainly for strings with double bass and are like Sinfonias in the Italian style.
+      <br>
+          •Divertimento in D, K. 205 (1773)<br>
+          •Divertimento in F "Lodron", K. 247 (1776)<br>
+          •Divertimento in D, K. 251 (1776)<br>
+          •Notturno in D for Four Orchestras, K. 286 (1776-77)<br>
+          •Divertimento in B flat "Lodron", K. 287 (1777)<br>
+          •Divertimento in D, K. 334 (1779-80)<br>
+          •Divertimento for two horns and strings, A Musical Joke, (Ein Musikalischer Spaß,) K. 522<br>
+      <br>
+    </RadzenHtml>
+  </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%">
+      <ChildContent>
+        <RadzenPanelMenuItem Text="FirstPage" Path="first-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="MainPage" Path="main-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Biography" Path="biography">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Music" Path="music">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Musical Works" Path="musical-works">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Descendants" Path="descendants">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Literature" Path="literature">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Movies" Path="movies">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="SheetMusic" Path="sheet-music">
+        </RadzenPanelMenuItem>
+      </ChildContent>
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter style="background-color: #a71010">
+  <ChildContent>
+    <RadzenLabel Text="AmadeusBlazor, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

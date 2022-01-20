@@ -1,0 +1,104 @@
+{
+  "components": [
+    {
+      "components": [
+        {
+          "class": "justify-content-start align-items-center",
+          "components": [
+            {
+              "class": "col-md-6 d-flex align-items-center",
+              "components": [
+                {
+                  "events": {
+                    "click": [
+                      {
+                        "code": "await InvokeAsync(() => { sidebar0.Toggle(); });",
+                        "type": "execute"
+                      },
+                      {
+                        "code": "await InvokeAsync(() => { body0.Toggle(); });",
+                        "type": "execute"
+                      }
+                    ]
+                  },
+                  "name": "sidebar-toggle0",
+                  "style": {
+                    "borderRadius": "18px"
+                  },
+                  "type": "sidebar-toggle"
+                },
+                {
+                  "name": "label0",
+                  "text": "AmadeusBlazor",
+                  "type": "label"
+                }
+              ],
+              "name": "leftCol",
+              "type": "col"
+            }
+          ],
+          "name": "headerRow",
+          "style": {
+            "backgroundColor": "#a71010"
+          },
+          "type": "row"
+        }
+      ],
+      "name": "header0",
+      "type": "header"
+    },
+    {
+      "components": [
+        {
+          "name": "heading0",
+          "size": "H3",
+          "style": {
+            "color": "#e6c54f"
+          },
+          "text": "Literature about Mozart",
+          "type": "heading"
+        },
+        {
+          "name": "image0",
+          "path": "/assets/images/literatur_1-1.png",
+          "type": "image"
+        },
+        {
+          "content": "<br>\n    •Braunbehrens, Volkmar (1986) Mozart in Vienna: 1781-1791, Timothy Bell Trans, HarperPerennial. ISBN 0-06-0974052<br>\n    •Davenport, Marcia (1932) Mozart, The Chautauqua Press.<br>\n    •Deutsch, Otto Erich (1965) Mozart: A Documentary Biography, Eric Blom et al. Trans, Stanford University Press.<br>\n    •Deutsch, Wilhelm Otto (2005) Mozart und die Religion<br>\n    •Eisen, Cliff and Simon P. Keefe, eds. (2006) The Cambridge Mozart Encyclopedia, Cambridge University Press., ISBN 0-521-85659-0<br>\n    •Greither, Aloys (1962) Wolfgang Amadé Mozart, Rowohlt Taschenbuch Verlag GmbH.<br>\n    •Gutman, Robert W. (2001) Mozart: A Cultural Biography, Random, 2001, ISBN 0-15-100482-X<br>\n    •Jick, Hershel (1997) A Listener's Guide to Mozart's Music, Vantage, ISBN 0-533-12308-9<br>\n    •Melograni, Piero (2006) Wolfgang Amadeus Mozart: A Biography, The University of Chicago Press., ISBN 0-226-51956-2. Read an excerpt<br>\n    •Mila, Massimo (1979) Lettura delle Nozze di Figaro, Einaudi. ISBN 88-06-18937-9<br>\n    •Niemetschek, Franz (1798) Leben des K. K. Kapellmeisters Wolfgang Gottlieb Mozart (\"The life of the royal and imperial Kapellmeister Wolfgang Gottlieb (=Amadeus) Mozart\"), 1956 English translation by Helen Mautner, published under the title Life of Mozart. London: Leonard Hyman. One of the first Mozart biographies, prepared in consultation with Mozart's widow Constanze.<br>\n    •Robbins, Gregory Allen. Mozart & Salieri, Cain & Abel: A Cinematic Transformation of Genesis 4<br>\n    •Rayner, Mark (2005) The Amadeus Net, ENC, 2005, ISBN 0-9752540-1-4<br>\n    •Robbins Landon, H. C. (1988) 1791: Mozart's Last Year, Thames & Hudson. ISBN 0-500-28107-6<br>\n    •Rosen, Charles (1997) The Classical Style: Haydn, Mozart, Beethoven. New York: Norton.<br>\n    •Rushton, Julian: Mozart, Wolfgang Amadeus in 'The New Grove Dictionary of Opera', ed. Stanley Sadie (London, 1992), ISBN 0-333-73432-7<br>\n    •Sadie, Stanley, ed. (2000) Mozart and his Operas, St. Martin's. ISBN 0-312-24410-X<br>\n    •Solomon, Maynard(1995) Mozart: A life, Harper Perennial. ISBN 0-06-092692-9<br>\n    •Till, Nicholas (1992) Mozart and the Enlightenment, Faber, Norton. ISBN 0-571-16169-3<br>\n\n<br>",
+          "name": "html0",
+          "type": "html"
+        }
+      ],
+      "name": "body0",
+      "type": "body"
+    },
+    {
+      "components": [
+        {
+          "name": "panelmenu0",
+          "style": {
+            "height": "100%"
+          },
+          "type": "panelmenu"
+        }
+      ],
+      "name": "sidebar0",
+      "type": "sidebar"
+    },
+    {
+      "components": [
+        {
+          "name": "footerText",
+          "text": "AmadeusBlazor, Copyright Ⓒ 2020",
+          "type": "label"
+        }
+      ],
+      "name": "footer0",
+      "style": {
+        "backgroundColor": "#a71010"
+      },
+      "type": "footer"
+    }
+  ],
+  "name": "Literature about Mozart"
+}

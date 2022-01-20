@@ -1,0 +1,19 @@
+﻿@inherits AmadeusBlazor.Layouts.MainLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%; width: 151px">
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter style="height: 40px">
+  <ChildContent>
+    <RadzenLabel style="display: inline-block; float: none; font-family: georgia,serif; font-size: 12px; left: 11px; position: absolute; top: 10px" Text="AmadeusBlazor, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

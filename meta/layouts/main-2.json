@@ -1,0 +1,172 @@
+{
+  "components": [
+    {
+      "components": [
+        {
+          "class": "align-items-center justify-content-start",
+          "components": [
+            {
+              "class": "col-md-6 d-flex align-items-center",
+              "components": [
+                {
+                  "name": "sidebar-toggle0",
+                  "style": {
+                    "borderRadius": "14px"
+                  },
+                  "type": "sidebar-toggle"
+                },
+                {
+                  "name": "label0",
+                  "text": "AmadeusBlazor",
+                  "type": "label"
+                }
+              ],
+              "name": "leftCol",
+              "style": {
+                "backgroundColor": "#a71010",
+                "borderRadius": "10px",
+                "color": "#ffffff",
+                "left": "17px"
+              },
+              "type": "col"
+            }
+          ],
+          "name": "headerRow",
+          "style": {
+            "backgroundColor": "#100000",
+            "borderRadius": "16px"
+          },
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "name": "menu0",
+                  "style": {},
+                  "type": "menu"
+                }
+              ],
+              "style": {
+                "backgroundColor": "#a71010"
+              },
+              "type": "col"
+            }
+          ],
+          "style": {
+            "backgroundColor": "#000000"
+          },
+          "type": "row"
+        }
+      ],
+      "name": "header0",
+      "type": "header"
+    },
+    {
+      "attributes": [
+        {}
+      ],
+      "components": [
+        {
+          "name": "heading0",
+          "size": "H3",
+          "text": "",
+          "type": "heading"
+        },
+        {
+          "name": "heading1",
+          "size": "H3",
+          "style": {
+            "height": "77px"
+          },
+          "text": "",
+          "type": "heading"
+        },
+        {
+          "name": "heading2",
+          "size": "H3",
+          "style": {
+            "fontFamily": "times new roman,times,serif",
+            "fontStyle": "oblique",
+            "textAlign": "center"
+          },
+          "text": "Wolfgang Amadeus Mozart - a musical genius",
+          "type": "heading"
+        },
+        {
+          "name": "heading3",
+          "size": "H3",
+          "type": "heading"
+        },
+        {
+          "name": "heading4",
+          "size": "H4",
+          "text": "baptized Johannes Chrysostomus Wolfgangus Theophilus Mozart\n(* 27 January 1756 – † 5 December 1791) was a prolific and influential composer of the Classical era.",
+          "type": "heading"
+        },
+        {
+          "name": "image0",
+          "path": "/assets/images/1527062.jpg",
+          "type": "image"
+        },
+        {
+          "name": "heading7",
+          "size": "H4",
+          "text": "His output of over 600 compositions includes works widely acknowledged as pinnacles of symphonic, concertante, chamber, piano, operatic, and choral music. Mozart is among the most enduringly popular of classical composers, and many of his works are part of the standard concert repertoire.",
+          "type": "heading"
+        },
+        {
+          "name": "heading8",
+          "size": "H4",
+          "text": "This website is dedicated to one of the greatest musicians in the world. ",
+          "type": "heading"
+        },
+        {
+          "name": "heading6",
+          "size": "H3",
+          "style": {
+            "height": "77px"
+          },
+          "text": "",
+          "type": "heading"
+        }
+      ],
+      "name": "body0",
+      "style": {
+        "backgroundColor": "#151414",
+        "color": "#fdfdfd",
+        "height": "718px",
+        "marginLeft": "0px"
+      },
+      "type": "body"
+    },
+    {
+      "name": "heading5",
+      "size": "H3",
+      "text": "\n\n ",
+      "type": "heading"
+    },
+    {
+      "components": [
+        {
+          "name": "footerText",
+          "style": {
+            "backgroundColor": "#A71010",
+            "color": "#ffffff"
+          },
+          "text": "AmadeusBlazor, Copyright Ⓒ 2020",
+          "type": "label"
+        }
+      ],
+      "name": "footer0",
+      "style": {
+        "backgroundColor": "#A71010",
+        "color": "#A71010\n"
+      },
+      "type": "footer"
+    }
+  ],
+  "name": "Main2"
+}

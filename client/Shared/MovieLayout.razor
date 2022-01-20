@@ -1,0 +1,75 @@
+﻿@inherits AmadeusBlazor.Layouts.MovieLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center" style="background-color: #a71010">
+      <div class="col-md-6 d-flex align-items-center">
+        <RadzenSidebarToggle style="border-radius: 18px" Click="@SidebarToggle0Click">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="AmadeusBlazor">
+        </RadzenLabel>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Movies about Mozart">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/filme_1-1.png">
+    </RadzenImage>
+    <RadzenHtml>
+      <br>
+      xxx
+      <br>
+          1942: Wen die Götter lieben – Regie: Karl Hartl (Eintrag auf IMDB)<br>
+          1955: Mozart – Reich mir die Hand, mein Leben – Regie: Karl Hartl (mit Oskar Werner und Johanna Matz) (Eintrag auf IMDB)<br>
+          1982: Mozart – mehrteiliger biographischer Fernsehfilm (F, I, B, Can, CH) – Regie: Marcel Bluwal (mit Christoph Bantzer) (Eintrag auf IMDB)<br>
+          1984: Amadeus – Regie: Miloš Forman (mit Tom Hulce und F. Murray Abraham) (Eintrag auf IMDB)<br>
+          1984: Wir drei – Regie: Pupi Avati<br>
+          1985: Vergeßt Mozart - Regie: Miroslav Luther, mit Max Tidoff, Katja Flint, Armin Mueller-Stahl, Uwe Ochsenknecht, Kurt Weinzierl (Eintrag auf film.at)<br>
+          2005: Der Wadenmesser – Regie: Kurt Palm (Eintrag auf IMDB)<br>
+          2006: Mozart in Mannheim – Fernsehdokumentarfilm von Harold Woetzel (hr-online)<br>
+          2006: Mozartkugeln – Regie: Larry Weinstein (Eintrag auf IMDB, Homepage)<br>
+          2006: Mozart – Ich hätte München Ehre gemacht in der deutschen und englischen Version der Internet Movie Database.<br>
+      <br>
+    </RadzenHtml>
+  </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%">
+      <ChildContent>
+        <RadzenPanelMenuItem Text="FirstPage" Path="first-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="MainPage" Path="main-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Biography" Path="biography">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Music" Path="music">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Musical Works" Path="musical-works">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Descendants" Path="descendants">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Literature" Path="literature">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Movies" Path="movies">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="SheetMusic" Path="sheet-music">
+        </RadzenPanelMenuItem>
+      </ChildContent>
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter style="background-color: #a71010">
+  <ChildContent>
+    <RadzenLabel Text="AmadeusBlazor, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

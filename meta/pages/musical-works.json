@@ -1,0 +1,19 @@
+{
+  "name": "Musical Works",
+  "access": "Everybody",
+  "layout": "MusicWork",
+  "components": [
+    {
+      "type": "content",
+      "container": "main",
+      "components": [
+        {
+          "type": "heading",
+          "size": "H1",
+          "name": "pageTitle",
+          "text": "Musical Works"
+        }
+      ]
+    }
+  ]
+}

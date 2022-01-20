@@ -1,0 +1,79 @@
+﻿@inherits AmadeusBlazor.Layouts.Main2LayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row align-items-center justify-content-start" style="background-color: #100000; border-radius: 16px">
+      <div class="col-md-6 d-flex align-items-center" style="background-color: #a71010; border-radius: 10px; color: #ffffff; left: 17px">
+        <RadzenSidebarToggle style="border-radius: 14px">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="AmadeusBlazor">
+        </RadzenLabel>
+      </div>
+    </div>
+    <div style="background-color: #000000" class="row">
+      <div class="col-md-12" style="background-color: #a71010">
+        <RadzenMenu >
+          <ChildContent>
+            <RadzenMenuItem Text="FirstPage" Path="first-page">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="MainPage" Path="main-page">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Biography" Path="biography">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Music" Path="music">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Musical Works" Path="musical-works">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Descendants" Path="descendants">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Literature" Path="literature">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Movies" Path="movies">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="SheetMusic" Path="sheet-music">
+            </RadzenMenuItem>
+          </ChildContent>
+        </RadzenMenu>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0" style="background-color: #151414; color: #fdfdfd; height: 718px; margin-left: 0px" >
+  <ChildContent>
+    <RadzenHeading Size="H3">
+    </RadzenHeading>
+    <RadzenHeading Size="H3" style="height: 77px">
+    </RadzenHeading>
+    <RadzenHeading Size="H3" style="font-family: times new roman,times,serif; font-style: oblique; text-align: center" Text="Wolfgang Amadeus Mozart - a musical genius">
+    </RadzenHeading>
+    <RadzenHeading Size="H3">
+    </RadzenHeading>
+    <RadzenHeading Size="H4" Text="baptized Johannes Chrysostomus Wolfgangus Theophilus Mozart
+    (* 27 January 1756 – † 5 December 1791) was a prolific and influential composer of the Classical era.">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/1527062.jpg">
+    </RadzenImage>
+    <RadzenHeading Size="H4" Text="His output of over 600 compositions includes works widely acknowledged as pinnacles of symphonic, concertante, chamber, piano, operatic, and choral music. Mozart is among the most enduringly popular of classical composers, and many of his works are part of the standard concert repertoire.">
+    </RadzenHeading>
+    <RadzenHeading Size="H4" Text="This website is dedicated to one of the greatest musicians in the world. ">
+    </RadzenHeading>
+    <RadzenHeading Size="H3" style="height: 77px">
+    </RadzenHeading>
+  </ChildContent>
+</RadzenBody>
+<RadzenHeading Size="H3" Text="
+
+ ">
+</RadzenHeading>
+<RadzenFooter style="background-color: #A71010; color: #A71010
+">
+  <ChildContent>
+    <RadzenLabel style="background-color: #A71010; color: #ffffff" Text="AmadeusBlazor, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

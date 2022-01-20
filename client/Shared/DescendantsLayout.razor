@@ -1,0 +1,76 @@
+﻿@inherits AmadeusBlazor.Layouts.DescendantsLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center" style="background-color: #a71010">
+      <div class="col-md-6 d-flex align-items-center">
+        <RadzenSidebarToggle style="border-radius: 18px" Click="@SidebarToggle0Click">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="AmadeusBlazor">
+        </RadzenLabel>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Descendants of Mozart">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/nachkommen_1-1.png">
+    </RadzenImage>
+    <RadzenHeading Size="H3" style="height: 20px">
+    </RadzenHeading>
+    <RadzenHtml>
+      •Reimund Leopold Mozart (* 27. Juni 1783 in Wien; † 19. August 1783 ebenda)<br>
+          <br>
+          •Karl Thomas Mozart (* 21. September 1784 in Wien; † 31. Oktober 1858 in Mailand)<br>
+          <br>
+          •Johann Thomas Leopold Mozart (* 18. Oktober 1786 in Wien; † 15. November 1786 ebenda)<br>
+          <br>
+          •Theresia Maria Anna Mozart (* 27. Dezember 1787 in Wien; † 29. Juni 1788 ebenda)<br>
+          <br>
+          •Anna Maria Mozart (* 16. November 1789 in Wien; † 16. November 1789 ebenda)<br>
+          <br>
+          •Franz Xaver Wolfgang Mozart (* 26. Juli 1791 in Wien; † 19. Juli 1844 in Karlsbad)<br>
+          <br>
+      <br>
+    </RadzenHtml>
+  </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%">
+      <ChildContent>
+        <RadzenPanelMenuItem Text="FirstPage" Path="first-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="MainPage" Path="main-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Biography" Path="biography">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Music" Path="music">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Musical Works" Path="musical-works">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Descendants" Path="descendants">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Literature" Path="literature">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Movies" Path="movies">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="SheetMusic" Path="sheet-music">
+        </RadzenPanelMenuItem>
+      </ChildContent>
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter style="background-color: #a71010">
+  <ChildContent>
+    <RadzenLabel Text="AmadeusBlazor, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

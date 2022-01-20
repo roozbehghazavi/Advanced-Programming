@@ -1,0 +1,6 @@
+{
+  "name": "Movies",
+  "access": "Everybody",
+  "layout": "movie",
+  "components": []
+}

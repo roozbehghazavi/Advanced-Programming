@@ -1,0 +1,92 @@
+{
+  "components": [
+    {
+      "components": [
+        {
+          "class": "justify-content-start align-items-center",
+          "components": [
+            {
+              "class": "col-md-6 d-flex align-items-center",
+              "components": [
+                {
+                  "events": {
+                    "click": [
+                      {
+                        "code": "await InvokeAsync(() => { sidebar0.Toggle(); });",
+                        "type": "execute"
+                      },
+                      {
+                        "code": "await InvokeAsync(() => { body0.Toggle(); });",
+                        "type": "execute"
+                      }
+                    ]
+                  },
+                  "name": "sidebar-toggle0",
+                  "style": {
+                    "borderRadius": "18px"
+                  },
+                  "type": "sidebar-toggle"
+                },
+                {
+                  "name": "label0",
+                  "text": "AmadeusBlazor",
+                  "type": "label"
+                }
+              ],
+              "name": "leftCol",
+              "type": "col"
+            }
+          ],
+          "name": "headerRow",
+          "style": {
+            "backgroundColor": "#a71010"
+          },
+          "type": "row"
+        }
+      ],
+      "name": "header0",
+      "type": "header"
+    },
+    {
+      "components": [
+        {
+          "name": "link0",
+          "path": "https://imslp.org/wiki/Category:Mozart,_Wolfgang_Amadeus",
+          "target": "_blank",
+          "text": "Compositions by: Mozart, Wolfgang Amadeus",
+          "type": "link"
+        }
+      ],
+      "name": "body0",
+      "type": "body"
+    },
+    {
+      "components": [
+        {
+          "name": "panelmenu0",
+          "style": {
+            "height": "100%"
+          },
+          "type": "panelmenu"
+        }
+      ],
+      "name": "sidebar0",
+      "type": "sidebar"
+    },
+    {
+      "components": [
+        {
+          "name": "footerText",
+          "text": "AmadeusBlazor, Copyright Ⓒ 2020",
+          "type": "label"
+        }
+      ],
+      "name": "footer0",
+      "style": {
+        "backgroundColor": "#a71010"
+      },
+      "type": "footer"
+    }
+  ],
+  "name": "SHeet"
+}

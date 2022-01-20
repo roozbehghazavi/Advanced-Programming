@@ -1,0 +1,14 @@
+{
+  "access": [],
+  "components": [],
+  "events": {
+    "load": [
+      {
+        "path": "main-page",
+        "type": "navigate"
+      }
+    ]
+  },
+  "layout": "FirstPage",
+  "name": "FirstPage"
+}

@@ -1,0 +1,104 @@
+{
+  "components": [
+    {
+      "components": [
+        {
+          "class": "justify-content-start align-items-center",
+          "components": [
+            {
+              "class": "col-md-6 d-flex align-items-center",
+              "components": [
+                {
+                  "events": {
+                    "click": [
+                      {
+                        "code": "await InvokeAsync(() => { sidebar0.Toggle(); });",
+                        "type": "execute"
+                      },
+                      {
+                        "code": "await InvokeAsync(() => { body0.Toggle(); });",
+                        "type": "execute"
+                      }
+                    ]
+                  },
+                  "name": "sidebar-toggle0",
+                  "style": {
+                    "borderRadius": "18px"
+                  },
+                  "type": "sidebar-toggle"
+                },
+                {
+                  "name": "label0",
+                  "text": "AmadeusBlazor",
+                  "type": "label"
+                }
+              ],
+              "name": "leftCol",
+              "type": "col"
+            }
+          ],
+          "name": "headerRow",
+          "style": {
+            "backgroundColor": "#a71010"
+          },
+          "type": "row"
+        }
+      ],
+      "name": "header0",
+      "type": "header"
+    },
+    {
+      "components": [
+        {
+          "name": "heading0",
+          "size": "H3",
+          "style": {
+            "color": "#e6c54f"
+          },
+          "text": "Movies about Mozart",
+          "type": "heading"
+        },
+        {
+          "name": "image0",
+          "path": "/assets/images/filme_1-1.png",
+          "type": "image"
+        },
+        {
+          "content": "<br>\nxxx\n<br>\n    1942: Wen die Götter lieben – Regie: Karl Hartl (Eintrag auf IMDB)<br>\n    1955: Mozart – Reich mir die Hand, mein Leben – Regie: Karl Hartl (mit Oskar Werner und Johanna Matz) (Eintrag auf IMDB)<br>\n    1982: Mozart – mehrteiliger biographischer Fernsehfilm (F, I, B, Can, CH) – Regie: Marcel Bluwal (mit Christoph Bantzer) (Eintrag auf IMDB)<br>\n    1984: Amadeus – Regie: Miloš Forman (mit Tom Hulce und F. Murray Abraham) (Eintrag auf IMDB)<br>\n    1984: Wir drei – Regie: Pupi Avati<br>\n    1985: Vergeßt Mozart - Regie: Miroslav Luther, mit Max Tidoff, Katja Flint, Armin Mueller-Stahl, Uwe Ochsenknecht, Kurt Weinzierl (Eintrag auf film.at)<br>\n    2005: Der Wadenmesser – Regie: Kurt Palm (Eintrag auf IMDB)<br>\n    2006: Mozart in Mannheim – Fernsehdokumentarfilm von Harold Woetzel (hr-online)<br>\n    2006: Mozartkugeln – Regie: Larry Weinstein (Eintrag auf IMDB, Homepage)<br>\n    2006: Mozart – Ich hätte München Ehre gemacht in der deutschen und englischen Version der Internet Movie Database.<br>\n<br>\n",
+          "name": "html0",
+          "type": "html"
+        }
+      ],
+      "name": "body0",
+      "type": "body"
+    },
+    {
+      "components": [
+        {
+          "name": "panelmenu0",
+          "style": {
+            "height": "100%"
+          },
+          "type": "panelmenu"
+        }
+      ],
+      "name": "sidebar0",
+      "type": "sidebar"
+    },
+    {
+      "components": [
+        {
+          "name": "footerText",
+          "text": "AmadeusBlazor, Copyright Ⓒ 2020",
+          "type": "label"
+        }
+      ],
+      "name": "footer0",
+      "style": {
+        "backgroundColor": "#a71010"
+      },
+      "type": "footer"
+    }
+  ],
+  "name": "movie"
+}

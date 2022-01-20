@@ -1,0 +1,57 @@
+﻿@inherits AmadeusBlazor.Layouts.SHeetLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center" style="background-color: #a71010">
+      <div class="col-md-6 d-flex align-items-center">
+        <RadzenSidebarToggle style="border-radius: 18px" Click="@SidebarToggle0Click">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="AmadeusBlazor">
+        </RadzenLabel>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenLink Path="https://imslp.org/wiki/Category:Mozart,_Wolfgang_Amadeus" Target="_blank" Text="Compositions by: Mozart, Wolfgang Amadeus">
+    </RadzenLink>
+  </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%">
+      <ChildContent>
+        <RadzenPanelMenuItem Text="FirstPage" Path="first-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="MainPage" Path="main-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Biography" Path="biography">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Music" Path="music">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Musical Works" Path="musical-works">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Descendants" Path="descendants">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Literature" Path="literature">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Movies" Path="movies">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="SheetMusic" Path="sheet-music">
+        </RadzenPanelMenuItem>
+      </ChildContent>
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter style="background-color: #a71010">
+  <ChildContent>
+    <RadzenLabel Text="AmadeusBlazor, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

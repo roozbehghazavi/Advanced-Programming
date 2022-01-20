@@ -1,0 +1,83 @@
+﻿@inherits AmadeusBlazor.Layouts.LiteratureAboutMozartLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center" style="background-color: #a71010">
+      <div class="col-md-6 d-flex align-items-center">
+        <RadzenSidebarToggle style="border-radius: 18px" Click="@SidebarToggle0Click">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="AmadeusBlazor">
+        </RadzenLabel>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenHeading Size="H3" style="color: #e6c54f" Text="Literature about Mozart">
+    </RadzenHeading>
+    <RadzenImage Path="assets/images/literatur_1-1.png">
+    </RadzenImage>
+    <RadzenHtml>
+      <br>
+          •Braunbehrens, Volkmar (1986) Mozart in Vienna: 1781-1791, Timothy Bell Trans, HarperPerennial. ISBN 0-06-0974052<br>
+          •Davenport, Marcia (1932) Mozart, The Chautauqua Press.<br>
+          •Deutsch, Otto Erich (1965) Mozart: A Documentary Biography, Eric Blom et al. Trans, Stanford University Press.<br>
+          •Deutsch, Wilhelm Otto (2005) Mozart und die Religion<br>
+          •Eisen, Cliff and Simon P. Keefe, eds. (2006) The Cambridge Mozart Encyclopedia, Cambridge University Press., ISBN 0-521-85659-0<br>
+          •Greither, Aloys (1962) Wolfgang Amadé Mozart, Rowohlt Taschenbuch Verlag GmbH.<br>
+          •Gutman, Robert W. (2001) Mozart: A Cultural Biography, Random, 2001, ISBN 0-15-100482-X<br>
+          •Jick, Hershel (1997) A Listener's Guide to Mozart's Music, Vantage, ISBN 0-533-12308-9<br>
+          •Melograni, Piero (2006) Wolfgang Amadeus Mozart: A Biography, The University of Chicago Press., ISBN 0-226-51956-2. Read an excerpt<br>
+          •Mila, Massimo (1979) Lettura delle Nozze di Figaro, Einaudi. ISBN 88-06-18937-9<br>
+          •Niemetschek, Franz (1798) Leben des K. K. Kapellmeisters Wolfgang Gottlieb Mozart ("The life of the royal and imperial Kapellmeister Wolfgang Gottlieb (=Amadeus) Mozart"), 1956 English translation by Helen Mautner, published under the title Life of Mozart. London: Leonard Hyman. One of the first Mozart biographies, prepared in consultation with Mozart's widow Constanze.<br>
+          •Robbins, Gregory Allen. Mozart & Salieri, Cain & Abel: A Cinematic Transformation of Genesis 4<br>
+          •Rayner, Mark (2005) The Amadeus Net, ENC, 2005, ISBN 0-9752540-1-4<br>
+          •Robbins Landon, H. C. (1988) 1791: Mozart's Last Year, Thames & Hudson. ISBN 0-500-28107-6<br>
+          •Rosen, Charles (1997) The Classical Style: Haydn, Mozart, Beethoven. New York: Norton.<br>
+          •Rushton, Julian: Mozart, Wolfgang Amadeus in 'The New Grove Dictionary of Opera', ed. Stanley Sadie (London, 1992), ISBN 0-333-73432-7<br>
+          •Sadie, Stanley, ed. (2000) Mozart and his Operas, St. Martin's. ISBN 0-312-24410-X<br>
+          •Solomon, Maynard(1995) Mozart: A life, Harper Perennial. ISBN 0-06-092692-9<br>
+          •Till, Nicholas (1992) Mozart and the Enlightenment, Faber, Norton. ISBN 0-571-16169-3<br>
+      
+      <br>
+    </RadzenHtml>
+  </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%">
+      <ChildContent>
+        <RadzenPanelMenuItem Text="FirstPage" Path="first-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="MainPage" Path="main-page">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Biography" Path="biography">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Music" Path="music">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Musical Works" Path="musical-works">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Descendants" Path="descendants">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Literature" Path="literature">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Movies" Path="movies">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="SheetMusic" Path="sheet-music">
+        </RadzenPanelMenuItem>
+      </ChildContent>
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter style="background-color: #a71010">
+  <ChildContent>
+    <RadzenLabel Text="AmadeusBlazor, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>
